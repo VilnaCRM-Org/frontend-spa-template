@@ -5,6 +5,7 @@ function App() {
 
   const click = () => {
     setTimeout(() => {
+      // eslint-disable-next-line
       console.log('done');
     }, 2000);
   };
