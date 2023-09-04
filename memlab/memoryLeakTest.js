@@ -1,7 +1,7 @@
 require('dotenv').config();
 
 function url() {
-  return process.env.IPv4_PORT;
+  return process.env.WEBSITE_URL;
 }
 
 async function action(page) {
