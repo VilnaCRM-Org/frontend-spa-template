@@ -33,7 +33,7 @@ jobs:
           steps.cache-pnpm-packages.outputs.cache-hit != 'true'
 
       - name: Run next linter
-        run: pnpm run lint:next
+        run: pnpm run lint:eslint
 
       - name: Run tsc linter
         run: pnpm run lint:tsc

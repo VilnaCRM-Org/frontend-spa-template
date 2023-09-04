@@ -2,32 +2,17 @@ const fs = require('fs');
 const path = require('path');
 
 class LocalizationGenerator {
-  i18nPath
-
-  featurePath
-
-  jsonFileType
-
-  localizationFile
-
-  pathToWriteLocalization
-
-  pathToI18nFolder
-
-  pathToI18nFile
-
   constructor(
     i18nPath = 'i18n',
     featurePath = 'src/features',
     jsonFileType = 'json',
     localizationFile = 'localization.json',
   ) {
-    this.i18nPath = i18nPath;
     this.featurePath = featurePath;
     this.jsonFileType = jsonFileType;
     this.localizationFile = localizationFile;
 
-    this.pathToWriteLocalization = `pages/${i18nPath}`;
+    this.pathToWriteLocalization = `src/${i18nPath}`;
     this.pathToI18nFolder = `${featurePath}/{folder}/${i18nPath}`;
     this.pathToI18nFile = `${featurePath}/{folder}/${i18nPath}/{file.name}`;
   }

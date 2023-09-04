@@ -5,15 +5,13 @@ module.exports = {
     es6: true,
     jest: true,
   },
-  parserOptions: { ecmaVersion: 8, sourceType: 'module' },
-  ignorePatterns: ['node_modules/*', 'docker-compose.yml', 'pnpm-lock.yaml'],
+  parserOptions: { ecmaVersion: 2022, sourceType: 'module' },
+  ignorePatterns: ['node_modules/*', 'docker-compose.yml', 'pnpm-lock.yaml', 'build/*', 'coverage/*'],
   extends: [
     'eslint:recommended',
-    'next',
     'plugin:storybook/recommended',
     'airbnb',
     'airbnb/hooks',
-    'plugin:@next/next/recommended',
   ],
   overrides: [
     {
@@ -57,6 +55,9 @@ module.exports = {
             patterns: ['@/features/*/*'],
           },
         ],
+
+        'no-multiple-empty-lines': [2, { max: 2, maxEOF: 0 }],
+
         'linebreak-style': ['error', 'unix'],
         'react/prop-types': 'off',
 
@@ -71,6 +72,8 @@ module.exports = {
         'import/default': 'off',
         'import/no-named-as-default-member': 'off',
         'import/no-named-as-default': 'off',
+
+        'import/extensions': 'off',
 
         'react/react-in-jsx-scope': 'off',
         'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }],
