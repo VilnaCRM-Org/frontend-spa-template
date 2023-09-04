@@ -35,6 +35,9 @@ jobs:
           steps.cache-pnpm-dependencies.outputs.cache-hit != 'true' ||
           steps.cache-pnpm-packages.outputs.cache-hit != 'true'
 
+      - name: Run build
+        run: pnpm run build
+
       - name: Run desktop performance test
         run: pnpm run lighthouse:desktop
 
