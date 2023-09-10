@@ -4,7 +4,7 @@
 
 [![CodeScene Code Health](https://codescene.io/projects/43861/status-badges/code-health)](https://codescene.io/projects/43861)
 [![CodeScene System Mastery](https://codescene.io/projects/43861/status-badges/system-mastery)](https://codescene.io/projects/43861)
-[![codecov](https://codecov.io/gh/VilnaCRM-Org/php-service-template/branch/main/graph/badge.svg?token=J3SGCHIFD5)](https://codecov.io/gh/VilnaCRM-Org/php-service-template)
+[![codecov](https://codecov.io/gh/VilnaCRM-Org/frontend-spa-template/graph/badge.svg?token=iV60KVUVxQ)](https://codecov.io/gh/VilnaCRM-Org/frontend-spa-template)
 
 ## Possibilities
 
