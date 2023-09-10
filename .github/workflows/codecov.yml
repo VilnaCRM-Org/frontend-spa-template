@@ -1,17 +1,18 @@
-name: unit testing
+name: codecov
 
 on:
   pull_request:
     branches: [ "main" ]
 
 jobs:
-  unit:
+  codecov:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
+      - name: Setup Node.js environment
         uses: actions/setup-node@v3
         with:
           node-version: ${{ vars.NODE_VERSION }}
@@ -36,3 +37,9 @@ jobs:
 
       - name: Run unit tests
         run: pnpm run test:unit
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v2
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+
