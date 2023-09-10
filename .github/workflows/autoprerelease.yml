@@ -1,7 +1,7 @@
 name: generate changelog and create pre release
 
 on:
-  push:
+  pull_request:
     branches: [ "main" ]
 
 jobs:
@@ -24,6 +24,7 @@ jobs:
           github-token: ${{ secrets.REPO_GITHUB_TOKEN }}
           output-file: "false"
           version-file: "package.json"
+          pre-release: "true"
 
       - name: Create Release
         uses: actions/create-release@v1
