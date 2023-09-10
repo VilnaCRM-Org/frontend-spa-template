@@ -25,7 +25,6 @@ jobs:
           output-file: "false"
           version-file: "package.json"
           pre-release: "true"
-          git-branch: ${{ github.ref }}
 
       - name: Create Release
         uses: actions/create-release@v1
