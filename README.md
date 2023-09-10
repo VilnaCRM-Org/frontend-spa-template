@@ -2,8 +2,8 @@
 
 # Template for modern SPA applications
 
-[![CodeScene Code Health](https://codescene.io/projects/43861/status-badges/code-health)](https://codescene.io/projects/43861)
-[![CodeScene System Mastery](https://codescene.io/projects/43861/status-badges/system-mastery)](https://codescene.io/projects/43861)
+[![CodeScene Code Health](https://codescene.io/projects/43862/status-badges/code-health)](https://codescene.io/projects/43862)
+[![CodeScene System Mastery](https://codescene.io/projects/43862/status-badges/system-mastery)](https://codescene.io/projects/43862)
 [![codecov](https://codecov.io/gh/VilnaCRM-Org/frontend-spa-template/graph/badge.svg?token=iV60KVUVxQ)](https://codecov.io/gh/VilnaCRM-Org/frontend-spa-template)
 
 ## Possibilities
