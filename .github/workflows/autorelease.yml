@@ -15,12 +15,12 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - uses: "marvinpinto/action-automatic-releases@latest"
+      - uses: actions/checkout@v2
+      - uses: CupOfTea696/gh-action-auto-release@v1.0.0
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest"
-          prerelease: true
-          title: "Development Build"
+          title: "Release: $version"
+          tag: "v$semver"
+          draft: false
+          regex: "/^Release: #{semver}$/i"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
