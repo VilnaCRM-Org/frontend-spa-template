@@ -20,20 +20,9 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
 
-      - name: Conventional Changelog Action
-        id: changelog
-        uses: TriPSs/conventional-changelog-action@v4
+      - uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          github-token: ${{ secrets.REPO_GITHUB_TOKEN }}
-          output-file: 'CHANGELOG.md'
-          version-file: "package.json"
-
-      - name: Create Release
-        uses: actions/create-release@v1
-        if: ${{ steps.changelog.outputs.skipped == 'false' }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ steps.changelog.outputs.tag }}
-          release_name: ${{ steps.changelog.outputs.tag }}
-          body: ${{ steps.changelog.outputs.clean_changelog }}
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "Development Build"
