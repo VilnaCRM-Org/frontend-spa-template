@@ -19,8 +19,10 @@ module.exports = {
   plugins: [
     {
       rules: {
-        'check-task-number-rule': (data) => {
-          const list = this.listOfNames.join('|');
+        'check-task-number-rule': function(data){
+          const listOfNames = module.exports.listOfNames;
+
+          const list = listOfNames.join('|');
 
           const regexp = new RegExp(`(${list})(.#(\\d+)).:`, 'gm');
 
@@ -30,7 +32,7 @@ module.exports = {
 
           return [
             correctCommit,
-            `your task number incorrect (${this.listOfNames.join('|')}(#1))`,
+            `your task number incorrect (${listOfNames.join('|')}(#1))`,
           ];
         },
       },
