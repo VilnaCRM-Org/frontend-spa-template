@@ -15,12 +15,10 @@ jobs:
       contents: write
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: CupOfTea696/gh-action-auto-release@v1.0.0
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
-          title: "Release: $version"
-          tag: "v$semver"
-          draft: false
-          regex: "/^Release: #{semver}$/i"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      - name: Automatic GitHub Release
+        uses: justincy/github-action-npm-release@2.0.1
+        id: release
