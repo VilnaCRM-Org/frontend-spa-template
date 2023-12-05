@@ -19,8 +19,8 @@ module.exports = {
   plugins: [
     {
       rules: {
-        'check-task-number-rule': function(data){
-          const listOfNames = module.exports.listOfNames;
+        'check-task-number-rule': function (data) {
+          const { listOfNames } = module.exports;
 
           const list = listOfNames.join('|');
 
