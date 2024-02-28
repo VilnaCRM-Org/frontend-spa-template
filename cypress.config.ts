@@ -6,9 +6,11 @@ export default defineConfig({
     supportFile: './cypress/support/e2e.{ts, tsx}',
     specPattern: './cypress/spec/*.spec.{ts, tsx}',
   },
+
   env: {
     WEBSITE_URL: process.env.WEBSITE_URL,
   },
+
   downloadsFolder: './cypress/downloads',
   fileServerFolder: './cypress/fileServer',
   fixturesFolder: './cypress/fixtures',
@@ -16,4 +18,11 @@ export default defineConfig({
   videosFolder: './cypress/videos',
   supportFolder: './cypress/support',
   video: false,
+
+  component: {
+    devServer: {
+      framework: 'create-react-app',
+      bundler: 'webpack',
+    },
+  },
 });
