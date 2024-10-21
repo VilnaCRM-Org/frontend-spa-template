@@ -40,7 +40,7 @@
     "react-scripts": "^5.0.1",
     "reflect-metadata": "^0.2.2",
     "require-from-string": "^2.0.2",
-    "storybook": "^8.3.5",
+    "storybook": "^8.3.6",
     "tsyringe": "^4.8.0",
     "web-vitals": "^3.5.2",
     "webpack": "^5.95.0"
