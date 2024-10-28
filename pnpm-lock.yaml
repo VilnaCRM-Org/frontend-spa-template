@@ -106,8 +106,8 @@ importers:
         specifier: ^8.3.5
         version: 8.3.6(storybook@8.3.6)
       '@storybook/addon-links':
-        specifier: ^6.5.16
-        version: 6.5.16(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^8.3.6
+        version: 8.3.6(react@18.3.1)(storybook@8.3.6)
       '@storybook/builder-webpack5':
         specifier: ^6.5.16
         version: 6.5.16(esbuild@0.23.1)(eslint@8.28.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.9.5)
@@ -1922,15 +1922,13 @@ packages:
     peerDependencies:
       storybook: ^8.3.6
 
-  '@storybook/addon-links@6.5.16':
-    resolution: {integrity: sha512-P/mmqK57NGXnR0i3d/T5B0rIt0Lg8Yq+qionRr3LK3AwG/4yGnYt4GNomLEknn/eEwABYq1Q/Z1aOpgIhNdq5A==}
+  '@storybook/addon-links@8.3.6':
+    resolution: {integrity: sha512-EGEH/kEjndEldbqyiJ8XSASkxqwzL/lgA/+6mHpa6Ljxhk1s5IMGcdA1ymJYJ2BpNdkUxRj/uxAa38eGcQiJ/g==}
     peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+      storybook: ^8.3.6
     peerDependenciesMeta:
       react:
-        optional: true
-      react-dom:
         optional: true
 
   '@storybook/addon-measure@8.3.6':
@@ -10657,7 +10655,7 @@ snapshots:
       '@types/node': 20.5.1
       chalk: 4.1.2
       cosmiconfig: 8.3.6(typescript@4.9.5)
-      cosmiconfig-typescript-loader: 4.4.0(@types/node@20.5.1)(cosmiconfig@8.3.6(typescript@4.9.5))(ts-node@10.9.2(@types/node@20.5.1)(typescript@4.9.5))(typescript@4.9.5)
+      cosmiconfig-typescript-loader: 4.4.0(@types/node@20.5.1)(cosmiconfig@8.3.6(typescript@4.9.5))(ts-node@10.9.2(@types/node@18.11.9)(typescript@4.9.5))(typescript@4.9.5)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -11997,23 +11995,14 @@ snapshots:
       storybook: 8.3.6
       ts-dedent: 2.2.0
 
-  '@storybook/addon-links@6.5.16(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@storybook/addon-links@8.3.6(react@18.3.1)(storybook@8.3.6)':
     dependencies:
-      '@storybook/addons': 6.5.16(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@storybook/client-logger': 6.5.16
-      '@storybook/core-events': 6.5.16
-      '@storybook/csf': 0.0.2--canary.4566f4d.1
-      '@storybook/router': 6.5.16(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@types/qs': 6.9.16
-      core-js: 3.38.1
-      global: 4.4.0
-      prop-types: 15.8.1
-      qs: 6.13.0
-      regenerator-runtime: 0.13.11
+      '@storybook/csf': 0.1.11
+      '@storybook/global': 5.0.0
+      storybook: 8.3.6
       ts-dedent: 2.2.0
     optionalDependencies:
       react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
 
   '@storybook/addon-measure@8.3.6(storybook@8.3.6)':
     dependencies:
@@ -14542,7 +14531,7 @@ snapshots:
       - '@swc/core'
       - '@swc/wasm'
 
-  cosmiconfig-typescript-loader@4.4.0(@types/node@20.5.1)(cosmiconfig@8.3.6(typescript@4.9.5))(ts-node@10.9.2(@types/node@20.5.1)(typescript@4.9.5))(typescript@4.9.5):
+  cosmiconfig-typescript-loader@4.4.0(@types/node@20.5.1)(cosmiconfig@8.3.6(typescript@4.9.5))(ts-node@10.9.2(@types/node@18.11.9)(typescript@4.9.5))(typescript@4.9.5):
     dependencies:
       '@types/node': 20.5.1
       cosmiconfig: 8.3.6(typescript@4.9.5)
