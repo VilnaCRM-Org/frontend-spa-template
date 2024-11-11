@@ -27,7 +27,7 @@
     "@mui/material": "^6.1.5",
     "@sentry/node": "^7.119.1",
     "@sentry/react": "^8.35.0",
-    "cypress": "^11.2.0",
+    "cypress": "^13.15.2",
     "dotenv": "^16.4.5",
     "graphql": "^16.9.0",
     "i18next": "^23.16.0",
