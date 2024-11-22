@@ -9,6 +9,15 @@ assignees: ''
 **Describe the bug**
 A clear and concise description of what the bug is.
 
+**Security Impact (if applicable)**
+- [ ] This issue might have security implications
+- Potential impact: [e.g., data exposure, unauthorized access]
+- Affected components: [e.g., authentication, API endpoints]
+
+**Version Information**
+- Application version: [e.g., v1.2.3]
+- Affected dependencies: [e.g., Node.js 20.10.0]
+
 **To Reproduce**
 Steps to reproduce the behavior:
 
@@ -21,7 +30,8 @@ Steps to reproduce the behavior:
 A clear and concise description of what you expected to happen.
 
 **Screenshots**
-If applicable, add screenshots to help explain your problem.
+If applicable, add screenshots to help explain your problem. 
+⚠️ Please ensure screenshots do not contain sensitive information (tokens, passwords, PII).
 
 **Desktop (please complete the following information):**
 
