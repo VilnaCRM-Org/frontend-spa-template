@@ -12,6 +12,7 @@ A clear and concise description of what the bug is.
 **Security Impact (if applicable)**
 
 - [ ] This issue might have security implications
+- Severity: [Critical/High/Medium/Low]
 - Potential impact: [e.g., data exposure, unauthorized access]
 - Affected components: [e.g., authentication, API endpoints]
 
@@ -34,7 +35,11 @@ A clear and concise description of what you expected to happen.
 **Screenshots**
 
 If applicable, add screenshots to help explain your problem.
-⚠️ Please ensure screenshots do not contain sensitive information (tokens, passwords, PII).
+⚠️ Before uploading screenshots:
+- Redact all sensitive information (tokens, passwords, PII)
+- Ensure no internal URLs or IP addresses are visible
+- Remove any session identifiers or authentication headers
+- Blur or hide any customer/user data
 
 **Desktop (please complete the following information):**
 

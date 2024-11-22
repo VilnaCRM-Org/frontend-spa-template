@@ -43,7 +43,6 @@ Ensure that each criterion is **measurable** and **testable** to clearly define 
 **Remember to use helpful labels and milestones to categorize and track the progress of this feature
 request.**
 
-
 - **Labels**: Use labels such as `enhancement`, `bug`, or `documentation` to categorize the issue.
   This helps in filtering and prioritizing tasks.
 - **Milestones**: Assign the issue to a relevant milestone to track its progress within a specific
