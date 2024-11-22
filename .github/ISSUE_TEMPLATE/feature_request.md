@@ -16,9 +16,9 @@ A clear and concise description of what the issue is about. Please include the f
 
 #### Example:
 
-"I would like to add a dark mode option to the application. This feature would benefit users who prefer
-+a darker interface, especially in low-light environments. For example, users working late at night
-+could switch to dark mode to reduce eye strain."
+"I would like to add a dark mode option to the application. This feature would benefit users who
+prefer a darker interface, especially in low-light environments. For example, users working late
+at night could switch to dark mode to reduce eye strain."
 
 ### Tasks
 
@@ -44,6 +44,7 @@ Ensure that each criterion is **measurable** and **testable** to clearly define 
 request.**
 
 
-- **Labels**: Use labels such as `enhancement`, `bug`, or `documentation` to categorize the issue. This helps in
-  filtering and prioritizing tasks.
-- **Milestones**: Assign the issue to a relevant milestone to track its progress within a specific release or sprint.
+- **Labels**: Use labels such as `enhancement`, `bug`, or `documentation` to categorize the issue.
+  This helps in filtering and prioritizing tasks.
+- **Milestones**: Assign the issue to a relevant milestone to track its progress within a specific
+  release or sprint.
