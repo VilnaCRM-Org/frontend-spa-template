@@ -22,7 +22,7 @@
   "dependencies": {
     "@apollo/client": "^3.11.10",
     "@craco/craco": "^7.1.0",
-    "@emotion/react": "^11.13.3",
+    "@emotion/react": "^11.13.5",
     "@emotion/styled": "^11.13.0",
     "@mui/material": "^6.1.5",
     "@sentry/node": "^8.40.0",
