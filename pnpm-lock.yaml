@@ -127,10 +127,10 @@ importers:
         specifier: ^29.5.13
         version: 29.5.14
       '@types/node':
-        specifier: 22.9.3
+        specifier: ^22.9.3
         version: 22.9.3
       '@types/react':
-        specifier: 18.0.25
+        specifier: ^18.0.25
         version: 18.0.25
       '@types/react-dom':
         specifier: ^18.3.1
@@ -145,7 +145,7 @@ importers:
         specifier: ^9.2.1
         version: 9.2.1(@babel/core@7.26.0)(webpack@5.96.1(esbuild@0.24.0))
       eslint:
-        specifier: 8.28.0
+        specifier: ^8.28.0
         version: 8.28.0
       eslint-config-airbnb:
         specifier: ^19.0.4
