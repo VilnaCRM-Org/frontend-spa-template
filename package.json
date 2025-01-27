@@ -20,7 +20,7 @@
     "lighthouse:mobile": "lhci autorun --config=lighthouserc.mobile.js"
   },
   "dependencies": {
-    "@apollo/client": "^3.12.7",
+    "@apollo/client": "^3.12.8",
     "@craco/craco": "^7.1.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
