@@ -22,13 +22,19 @@ module.exports = {
         '**/*.spec.jsx',
       ],
       parser: '@typescript-eslint/parser',
+      parserOptions: {
+        project: './tsconfig.json',
+      },
       settings: {
         react: { version: 'detect' },
         'import/resolver': {
           node: {
             extensions: ['.ts', '.tsx', '.js', ',jsx'],
           },
-          typescript: {},
+          typescript: {
+            alwaysTryTypes: true,
+            project: './tsconfig.json',
+          },
         },
       },
       env: {
@@ -87,6 +93,7 @@ module.exports = {
         '@typescript-eslint/no-empty-function': ['off'],
         '@typescript-eslint/no-explicit-any': ['off'],
         '@typescript-eslint/no-var-requires': ['off'],
+        'import/no-cycle': ['error'],
       },
     },
   ],
