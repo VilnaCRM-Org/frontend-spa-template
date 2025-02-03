@@ -6,7 +6,7 @@ module.exports = {
     jest: true,
   },
   parserOptions: { ecmaVersion: 2022, sourceType: 'module' },
-  ignorePatterns: ['node_modules/*', 'docker-compose.yml', 'pnpm-lock.yaml', 'build/*', 'coverage/*', 'storybook-static/*', 'cypress.config.ts'],
+  ignorePatterns: ['node_modules/*', 'docker-compose.yml', 'pnpm-lock.yaml', 'build/*', 'coverage/*', 'storybook-static/*'],
   extends: [
     'eslint:recommended',
     'plugin:storybook/recommended',

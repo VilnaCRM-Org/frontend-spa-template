@@ -12,8 +12,6 @@
     "lint:eslint": "eslint .",
     "lint:tsc": "tsc",
     "lint:md": "markdownlint -i CHANGELOG.md **/*.md",
-    "test:e2e": "cypress run --headless --browser chrome",
-    "test:e2e-local": "cypress open",
     "test:unit": "jest --verbose",
     "test:memory-leak": "memlab run -v --scenario ./memlab/memoryLeakTest.js",
     "lighthouse:desktop": "lhci autorun --config=lighthouserc.desktop.js& ",
