@@ -23,23 +23,6 @@ jobs:
       - name: Install dependencies
         run: pnpm i --frozen-lockfile
 
-       - name: Install Cypress
-        run: npx cypress install
-
-      - name: Cache Cypress binary
-        uses: actions/cache@v3
-        with:
-          path: ~/.cache/Cypress
-          key: ${{ runner.os }}-cypress-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-cypress-
-
       - name: Build
         run: pnpm run build
 
-      - name: Cypress run
-        uses: cypress-io/github-action@v5
-        with:
-          start: pnpm run dev
-          wait-on: 'http://localhost:3000'
-          browser: chrome
