@@ -6,7 +6,7 @@ module.exports = {
     jest: true,
   },
   parserOptions: { ecmaVersion: 2022, sourceType: 'module' },
-  ignorePatterns: ['node_modules/*', 'docker-compose.yml', 'pnpm-lock.yaml', 'build/*', 'coverage/*', 'storybook-static/*'],
+  ignorePatterns: ['node_modules/*', 'docker-compose.yml', 'pnpm-lock.yaml', 'build/*', 'coverage/*', 'storybook-static/*', 'cypress.config.ts'],
   extends: [
     'eslint:recommended',
     'plugin:storybook/recommended',
@@ -22,13 +22,19 @@ module.exports = {
         '**/*.spec.jsx',
       ],
       parser: '@typescript-eslint/parser',
+      parserOptions: {
+        project: './tsconfig.json',
+      },
       settings: {
         react: { version: 'detect' },
         'import/resolver': {
           node: {
             extensions: ['.ts', '.tsx', '.js', ',jsx'],
           },
-          typescript: {},
+          typescript: {
+            alwaysTryTypes: true,
+            project: './tsconfig.json',
+          },
         },
       },
       env: {
@@ -87,6 +93,7 @@ module.exports = {
         '@typescript-eslint/no-empty-function': ['off'],
         '@typescript-eslint/no-explicit-any': ['off'],
         '@typescript-eslint/no-var-requires': ['off'],
+        'import/no-cycle': ['error'],
       },
     },
   ],
