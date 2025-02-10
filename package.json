@@ -18,13 +18,13 @@
     "lighthouse:mobile": "lhci autorun --config=lighthouserc.mobile.js"
   },
   "dependencies": {
-    "@apollo/client": "^3.12.9",
+    "@apollo/client": "^3.12.11",
     "@craco/craco": "^7.1.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
-    "@mui/material": "^6.4.2",
-    "@sentry/node": "^8.54.0",
-    "@sentry/react": "^8.54.0",
+    "@mui/material": "^6.4.3",
+    "@sentry/node": "^9.0.0",
+    "@sentry/react": "^9.0.0",
     "dotenv": "^16.4.7",
     "graphql": "^16.10.0",
     "i18next": "^23.16.8",
@@ -43,7 +43,7 @@
     "webpack": "^5.97.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.26.7",
+    "@babel/core": "^7.26.8",
     "@commitlint/cli": "^19.7.1",
     "@commitlint/config-conventional": "^19.7.1",
     "@lhci/cli": "^0.14.0",
@@ -58,7 +58,7 @@
     "@storybook/testing-library": "^0.2.2",
     "@testing-library/react": "^15.0.7",
     "@types/jest": "^29.5.14",
-    "@types/node": "^22.13.0",
+    "@types/node": "^22.13.1",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
@@ -76,7 +76,7 @@
     "eslint-plugin-storybook": "^0.11.2",
     "eslint-plugin-testing-library": "^7.1.1",
     "husky": "^9.1.7",
-    "markdownlint-cli": "^0.42.0",
+    "markdownlint-cli": "^0.44.0",
     "ts-jest": "^29.2.5",
     "typescript": "^4.9.5"
   },
