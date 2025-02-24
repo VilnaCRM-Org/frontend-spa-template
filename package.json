@@ -22,7 +22,7 @@
     "@craco/craco": "^7.1.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
-    "@mui/material": "^6.4.4",
+    "@mui/material": "^6.4.5",
     "@sentry/node": "^9.1.0",
     "@sentry/react": "^9.1.0",
     "dotenv": "^16.4.7",
