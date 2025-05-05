@@ -23,7 +23,7 @@
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mui/material": "^6.4.11",
-    "@sentry/node": "^9.13.0",
+    "@sentry/node": "^9.15.0",
     "@sentry/react": "^9.15.0",
     "dotenv": "^16.5.0",
     "graphql": "^16.11.0",
@@ -43,11 +43,11 @@
     "webpack": "^5.99.7"
   },
   "devDependencies": {
-    "@babel/core": "^7.26.10",
+    "@babel/core": "^7.27.1",
     "@commitlint/cli": "^19.8.0",
     "@commitlint/config-conventional": "^19.8.0",
     "@lhci/cli": "^0.14.0",
-    "@microsoft/api-extractor": "^7.52.4",
+    "@microsoft/api-extractor": "^7.52.7",
     "@storybook/addon-actions": "^8.6.12",
     "@storybook/addon-essentials": "^8.6.12",
     "@storybook/addon-interactions": "^8.6.12",
@@ -60,7 +60,7 @@
     "@types/jest": "^29.5.14",
     "@types/node": "^22.15.3",
     "@types/react": "^18.3.20",
-    "@types/react-dom": "^18.3.6",
+    "@types/react-dom": "^18.3.7",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
     "babel-loader": "^10.0.0",
@@ -78,7 +78,7 @@
     "husky": "^9.1.7",
     "markdownlint-cli": "^0.44.0",
     "ts-jest": "^29.3.2",
-    "typescript": "^5.4.5"
+    "typescript": "^5.8.3"
   },
   "browserslist": {
     "production": [
