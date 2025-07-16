@@ -14,7 +14,3 @@ updates:
     labels:
       - "dependencies"
       - "automated"
-    commit-message:
-      prefix: "deps"
-      prefix-development: "deps-dev"
-      include: "scope"
